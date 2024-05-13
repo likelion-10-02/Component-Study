@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Mini Component - Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link rel="stylesheet" href="./font.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="login">
+      <section class="login-form">
+        <header>
+          <!-- figure에는 꼭 figcaption이 들어가야 하는지? -->
+          <figure>
+            <img src="./img/logo.png" alt="logo" />
+          </figure>
+        </header>
+        <section class="title">
+          <h1>We are <span class="accent-font">Frontend-Developer</span></h1>
+          <p class="title-contents">
+            Welcome Back, Please login <br />to your account.
+          </p>
+        </section>
+        <section class="login-input-form">
+          <div class="login-form-box">
+            <div class="input-group">
+              <label for="login-email" class="email-log"> Email Address </label>
+              <input type="email" name="login-email" id="login-email" />
+            </div>
+            <div class="input-group">
+              <label for="login-password">Password</label>
+              <input type="password" name="" id="" />
+            </div>
+          </div>
+          <div class="login-check">
+            <div class="input-group">
+              <input
+                type="checkbox"
+                name="login-rememb-check"
+                id="login-rememb-check"
+              />
+              <label for="login-rememb-check">Remember me</label>
+            </div>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Forgot Password
+            </a>
+          </div>
+          <div class="login-button-group">
+            <button type="submit">Login</button>
+            <button type="button">Sign up</button>
+          </div>
+          <div class="login-policy">
+            <p>
+              By Signing up, you agree to Aroma's <br /><a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Terms and Conditions</a
+              >
+              &
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                Privacy Policy
+              </a>
+            </p>
+          </div>
+        </section>
+        <button type="button" class="login-toggle">
+          <i class="fi fi-rr-caret-right"></i>
+        </button>
+      </section>
+      <section class="menu-look">
+        <header>
+          <ul>
+            <li>about us</li>
+            <li>showcase</li>
+            <li>letters</li>
+            <li>contact</li>
+            <li>blog</li>
+          </ul>
+        </header>
+        <figure></figure>
+        <h1>a</h1>
+        <div class="input-group">
+          <button type="button">previous</button>
+          <button type="button" class="next-btn">next</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
