@@ -1,0 +1,98 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.login{
+  position: relative;
+  font-size: 10px;
+  color: #181818;
+
+  fieldset{
+    border: 0;
+
+    width: 500px;
+  }
+}
+
+.forgot-Pwd{
+  position: absolute;
+}
+
+.input-form{
+  --border: 2px solid lightgray;
+  --padding: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  label{
+    border: var(--border);
+    padding: var(--padding);
+    border-bottom: 0;
+    padding-bottom: 1px;
+
+    color: gray;
+  }
+
+  input{
+    border: var(--border);
+    padding: var(--padding);
+    border-top: 0;
+  }
+
+  #userEmail{
+    border-bottom: 0;
+  }
+
+  input:focus {
+    outline: 0;
+  }
+
+  &:focus-within{
+    input, label {
+      border-left: 0;
+    }
+
+    border-left: 2px solid palevioletred;
+  }
+}
+
+.checkbox-form{
+  font-size: 10px;
+  color: gray;
+
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.button-form{
+  button{
+    border-radius: 6%;
+  }
+
+  .login-button{
+    background: #181818;
+    color: #fff;
+
+    border: 1px solid #181818;
+    padding: 11px 37px 11px 37px;
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+
+  .Sign-button{
+    background: #fff;
+    color: gray;
+
+    border: 1px solid gray;
+    padding: 11px 31px 11px 31px;
+  }
+
+}
