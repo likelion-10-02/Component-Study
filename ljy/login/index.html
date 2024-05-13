@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aroma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+20+Charted&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="aroma-container" role="group">
+    <!-- 헤더 -->
+    <header>
+      <a href="/" class="logo" tabindex="0">
+        <img src="./img/aromaLogo.JPG" alt="아로마 로고" />
+      </a>
+      <div class="intro-section" role="group">
+        <h1 class="aroma-title" tabindex="0">We are <span>aroma</span></h1>
+        <p class="welcome-msg" tabindex="0">Welcome Back, Please login <br />to your account.</p>
+      </div>
+      <nav>
+        <!-- css로 나중에 대문자로 바꿔보기 -->
+        <ul class="aroma-search">
+          <li><a href="/">about us</a></li>
+          <li><a href="/">showcase</a></li>
+          <li><a href="/">letters</a></li>
+          <li><a href="/">contact</a></li>
+          <li><a href="/">blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- 로그인 영역 -->
+    <section class="login-area">
+      <h2 class="sr-only">로그인 영역</h2>
+      <form action="/">
+        <fieldset>
+          <legend class="sr-only">로그인</legend>
+          <!-- 아이디 입력 서식 -->
+          <div class="login-input">
+            <label for="userEmail" tabindex="0">Email Address</label>
+            <input type="email" id="userEmail" name="userEmail" placeholder="aromadev1@gmail.com"/>
+            <p class="sr-only">이메일을 입력해 주세요.</p>
+          </div>
+          <!-- 비밀번호 입력 서식 -->
+          <div class="login-input">
+            <label for="userPwd" tabindex="0">Password</label>
+            <input type="password" id="userPwd" name="userPwd" placeholder="8자리 이상 입력"/>
+            <p class="sr-only">8자리 이상 12자리 이하의 비밀번호를 입력해 주세요.</p>
+          </div>
+        </fieldset>
+      </form>
+      <!-- 로그인 상태 유지, 패스워드 찾기 -->
+      <div class="sf-area" role="group">
+        <ul class="save-find">
+          <li class="login-save">
+            <input type="checkbox" id="saveLogin" name="saveLogin"/>
+            <label for="saveLogin">Remember me</label>
+          </li>
+          <li class="pwd-find">
+            <strong>
+              <a href="/">Forgot password</a>
+            </strong>
+          </li>
+        </ul>
+      </div>
+      <!-- 로그인, 회원가입 버튼 -->
+      <div class="login-sign">
+        <button type="submit">Login</button>
+        <button><a href="/">Sign up</a></button>
+      </div>
+    </section>
+    <!-- 약관, 개인정보 -->
+    <div class="terms-privacy" role="group">
+      <p>By signing up, you agree to Aroma's <br />
+        <span>Terms and Conditions</span> & <span>Privacy Policy</span>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
