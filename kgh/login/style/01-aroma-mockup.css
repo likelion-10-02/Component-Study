@@ -196,7 +196,9 @@ em {
   .form-btn-group {
     margin: 32px 0 64px;
 
-    button {
+    button, a {
+      display: inline-block;
+      text-align: center;
       padding: 10px 16px;
       width: 130px;
       border-radius: 5px;
