@@ -169,7 +169,7 @@ fieldset {
 
 .login-input input::placeholder {
   color: var(--gray-900);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 
@@ -207,15 +207,17 @@ fieldset {
 
 
 /* 로그인, 회원가입 버튼 */
-.login-sign button {
+.login-btn,
+.signup-btn {
   padding: 15px 45px;
   margin-bottom: 2rem;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 0.875rem;
 }
 
 
-.login-sign button:first-child {
+.login-btn {
   border: none;
   background-color: var(--black);
   color: var(--gray-100);
@@ -224,20 +226,20 @@ fieldset {
 }
 
 
-.login-sign button:first-child:hover {
+.login-btn:hover {
   background-color: var(--gray-800);
   color: var(--white);
 }
 
 
-.login-sign button:last-child  {
+.signup-btn  {
   background-color: var(--white);
   color: var(--gray-800);
   border: 1px solid var(--gray-600);
 }
 
 
-.login-sign button:last-child:hover {
+.signup-btn:hover {
   background-color: var(--gray-100);
   color: var(--gray-600);
   transition: background 0.2s ease-in-out;
