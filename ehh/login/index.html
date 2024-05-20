@@ -14,11 +14,13 @@
 
 <body>
   <header class="header">
-    <div class="logo">
-      <a href="/" class="logo-link">
-        <span aria-label="로고">Logo</span>
-      </a>
-    </div>
+    <h1>
+      <div class="logo">
+        <a href="/" class="logo-link">
+          <span aria-label="로고">Logo</span>
+        </a>
+      </div>
+    </h1>
     <h2 class="sr-only" id="linkTitle">링크 모음</h2>
     <ul class="link-list" role="group" aria-labelledby="linkTitle">
       <li><a href="/">ABOUT</a></li>
@@ -35,30 +37,32 @@
 
     <h2 class="sr-only">로그인</h2>
     <form action="/" class="login-form">
-      <legend class="sr-only">Login Form</legend>
-      <div role="group" class="login-box">
-        <label for="userEmail">Email Address</label>
-        <input type="email" id="userEmail" name="userEmail" required placeholder="example@gmail.com" />
-      </div>
-      <div role="group" class="pwd-box">
-        <label for="userPwd">Password</label>
-        <input type="password" name="userPwd" id="userPwd" required placeholder="***********" />
-      </div>
-      <div role="group" class="etc-box">
-        <div class="remember-box">
-          <input type="checkbox" name="idRemember" id="idRemember" />
-          <label for="idRemember">Remember me</label>
-          <div role="tooltip" class="tooltip">
-            <span tabindex="0" class="tooltip-icon fas fa-info"></span>
-            <strong class="tooltip-content">Your logged-in account information is saved. Please use it only on your personal device for privacy protection.</strong>
-          </div>
+      <fieldset>
+        <legend class="sr-only">Login Form</legend>
+        <div role="group" class="login-box">
+          <label for="userEmail">Email Address</label>
+          <input type="email" id="userEmail" name="userEmail" required placeholder="example@gmail.com" />
         </div>
-        <a href="/">Forgot password</a>
-      </div>
-      <div class="button-box">
-        <button type="submit">Login</button>
-        <a href="/">Sign up</a>
-      </div>
+        <div role="group" class="pwd-box">
+          <label for="userPwd">Password</label>
+          <input type="password" name="userPwd" id="userPwd" required placeholder="***********" />
+        </div>
+        <div role="group" class="etc-box">
+          <div class="remember-box">
+            <input type="checkbox" name="idRemember" id="idRemember" />
+            <label for="idRemember">Remember me</label>
+            <div role="tooltip" class="tooltip">
+              <span tabindex="0" class="tooltip-icon fas fa-info"></span>
+              <strong class="tooltip-content">Your logged-in account information is saved. Please use it only on your personal device for privacy protection.</strong>
+            </div>
+          </div>
+          <a href="/">Forgot password</a>
+        </div>
+        <div class="button-box">
+          <button type="submit">Login</button>
+          <a href="/">Sign up</a>
+        </div>
+      </fieldset>
     </form>
     <div class="logo-mark">
       <span class="logo-content">logo</span>
