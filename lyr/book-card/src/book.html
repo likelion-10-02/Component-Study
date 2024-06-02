@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIBRARY</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="/css/book.css" />
+</head>
+<body>
+<div class="wrapper">
+  <!--헤더 부분-->
+  <header class="header">
+    <h1>LIBRARY</h1>
+
+    <!--책 검색(검색 화면이 따로 있다는 가정으로 링크 연결)-->
+    <a href="/" class="search"><span class="fab fa-sistrix"></span></a>
+    <a href="/"><span class="fas fa-plus"></span></a>
+  </header>
+
+
+  <!--책 그룹(책장)-->
+  <main class="bookshelf">
+    <!--첫번째 선반-->
+    <section class="shelf shelf-section1">
+      <div class="shelf-books">
+        <figure class="book">
+          <a href="/"><img src="./books/book1.jpg" alt="" /></a>
+        </figure>
+        <figure class="book">
+          <a href="/"><img src="./books/book2.jpg" alt="" /></a>
+        </figure>
+        <figure class="book">
+          <a href="/"><img src="./books/book3.jpg" alt="" /></a>
+        </figure>
+      </div>
+    
+      <!--책장 받침대-->
+      <div class="shelf-holder"></div>
+    </section>
+
+
+    <!--두번째 선반-->
+    <section class="shelf shelf-section2">
+      <div class="shelf-books">
+        <figure class="book">
+          <a href="/"><img src="./books/book4.jpg" alt="" /></a>
+        </figure>
+        <figure class="book">
+          <a href="/"><img src="./books/book5.jpg" alt="" /></a>
+        </figure>
+        <figure class="book">
+          <a href="/"><img src="./books/book6.jpg" alt="" /></a>
+        </figure>
+      </div>
+    
+      <!--책장 받침대-->
+      <div class="shelf-holder"></div>
+    </section>
+
+    
+    <!--세번째 선반-->
+    <section class="shelf shelf-section3">
+      <div class="shelf-books">
+        <figure class="book">
+          <a href="/"><img src="./books/book7.jpg" alt="" /></a>
+        </figure>
+        <figure class="book">
+          <a href="/"><img src="./books/book8.jpg" alt="" /></a>
+        </figure>
+        <figure class="book">
+          <a href="/"><img src="./books/book9.png" alt="" /></a>
+        </figure>
+      </div>
+    
+      <!--책장 받침대-->
+      <div class="shelf-holder"></div>
+    </section>
+  </main>
+
+  <!--내비게이션-->
+  <nav class="navigation">
+    <a href="/"><span class="icon fa-solid fa-book-bookmark"></span></a>
+    <a href="/"><span class="icon fa-solid fa-compass"></span></a>
+    <a href="/"><span class="icon fa-solid fa-bookmark"></span></a>
+    <a href="/"><span class="icon fa-solid fa-user"></span></a>
+  </nav>
+</div>
+</body>
+</html>

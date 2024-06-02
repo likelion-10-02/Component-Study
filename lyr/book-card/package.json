@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "scss": "sass src/scss:src/css",
+    "watch": "sass --update --watch src/scss:src/css",
+    "dev": "live-server src --port=3000 --host=localhost",
+    "start": "run-p watch dev",
+    "no-map": "npm run scss -- --no-source-map"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.77.3"
+  }
+}

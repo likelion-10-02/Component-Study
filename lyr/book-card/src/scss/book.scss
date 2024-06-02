@@ -1,0 +1,87 @@
+//theme.scss: 색깔 변수 담고 있음.
+@use './theme.scss' as theme;
+
+@mixin flex($flow){
+  display: flex;
+  flex-flow: $flow;
+}
+
+
+//전체 화면 크기 레이아웃
+body{
+  @include flex(column);
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.wrapper{
+  width: 470px;
+}
+
+
+//헤더 레이아웃
+header{
+  @include flex(row);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+
+  color: theme.$highlight-color;
+
+  a{
+    font-size: 22px;
+    color: theme.$highlight-color;
+  }
+}
+
+.search{
+  order: -1;
+}
+
+h1{
+  font-size: 18px;
+}
+
+
+//책 그룹 레이아웃
+.shelf{
+  @at-root .shelf-books{
+    @include flex(row);
+    justify-content: space-around;
+  }
+
+  @at-root .shelf-holder{
+    height: 15px;
+    box-shadow: 5px 5px 10px lightgrey;
+  }
+
+  @at-root .book{
+    margin: 40px 0 0 0;
+  }
+
+  @at-root img{
+    width: 110px;
+    height: auto;
+  }
+}
+
+
+//네비게이션 레이아웃
+.navigation{
+  @include flex(row);
+  justify-content: space-around;
+  padding: 45px 0 0 0;
+}
+
+.icon{
+  font-size: 25px;
+  color: theme.$main-color;
+
+  &:hover,
+  &:focus{
+    color: theme.$highlight-color;
+  }
+}
