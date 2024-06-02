@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Component</title>
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://kit.fontawesome.com/9039c9f2c0.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="flex-group" role="group">
+      <section class="book-container book-main">
+        <header class="book-main-header">
+          <h2>LIBRARY</h2>
+          <a class="search" href="#" aria-label="검색"><span class="fa-solid fa-magnifying-glass"></span></a>
+          <a class="plus" href="#" aria-label="더보기"><span class="fa-solid fa-plus"></span></a>
+        </header>
+        <nav class="book-main-nav">
+          <ul>
+            <li class="is-selected"><a href="#" aria-label="서재"><span class="fa-solid fa-book-bookmark"></span></a></li>
+            <li><a href="#" aria-label="탐색"><span class="fa-solid fa-compass"></span></a></li>
+            <li><a href="#" aria-label="독서노트"><span class="fa-solid fa-bookmark"></span></a></li>
+            <li><a href="#" aria-label="사용자 메뉴"><span class="fa-solid fa-user"></span></a></li>
+          </ul>
+        </nav>
+        <ul class="book-shelf" aria-label="서재 책 목록">
+          <li class="book book1"><a href="#"><img src="./image/SmallThingsLikeThese.jpg" alt="Small Things Like These" /></a></li>
+          <li class="book book2"><a href="#"><img src="./image/Kairos.jpg" alt="Kairos" /></a></li>
+          <li class="book book3"><a href="#"><img src="./image/Foster.jpg" alt="Foster" /></a></li>
+          <li class="book book4"><a href="#"><img src="./image/TheMidnightLibrary.jpg" alt="The Midnight Library" /></a></li>
+          <li class="book book5"><a href="#"><img src="./image/CryingInHMart.jpg" alt="Crying in H Mart" /></a></li>
+          <li class="book book6"><a href="#"><img src="./image/1984.jpg" alt="1984" /></a></li>
+          <li class="book book7"><a href="#"><img src="./image/TuesdaysWithMorrie.jpg" alt="Tuesdays with Morrie" /></a></li>
+          <li class="book book8"><a href="#"><img src="./image/AnimalFarm.jpg" alt="Animal Farm" /></a></li>
+          <li class="book book9"><a href="#"><img src="./image/ToKillAMockingbird.jpg" alt="To Kill a Mockingbird" /></a></li>
+        </ul>
+      </section>
+      <section class="book-container book-info">
+        <figure class="book-info-figure">
+          <img src="./image/SmallThingsLikeThese.jpg" alt="Small Things Like These" />
+          <figcaption>
+            <h3 class="book-title" aria-label="책 제목">Small Things Like These</h3>
+            <span class="author" aria-label="저자">Claire Keegan</span>
+          </figcaption>
+        </figure>
+        <div class="rating" aria-label="평점">9.8</div>
+        <p class="book-explanation" aria-label="책 소개">It is 1985, in an Irish Town. During the weeks leading up to Christmas, Bill Furlong, a coal and timber merchant, faces into his busiest season. As he does the rounds, he feels the past rising up to meet him - and encounters the complicit silences of a people controlled by the Church.<br />The long-awaited new work from the author of Foster, Small Things Like These is an unforgettable story of hope, quiet heroism and tenderness.</p>
+        <div class="link-group">
+          <a href="#" class="see-reviews">SEE REVIEWS</a>
+          <a href="#" class="read-now">READ NOW</a>
+        </div>
+        <button type="button" class="close-button" aria-label="닫기"><span class="fa-solid fa-xmark"></span></button>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+@use './../utils' as *;
+
+.book-info-figure {
+  @include flex(column, $align:center, $gap:$sm-spacing);
+
+  img {
+    width: 65%;
+    box-shadow: 0 0 2rem 0.5rem rgba(12,12,12,0.15);
+  }
+
+  figcaption {
+    @include flex(column, $align:center, $gap:$sm-spacing);
+
+    h3 {
+      padding-top: $md-spacing;
+      font-size: 1.375rem;
+      font-weight: 800;
+      color: $gray-700;
+    }
+
+    span {
+      padding-top: $xs-spacing;
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: $blue;
+    }
+  }
+}

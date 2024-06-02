@@ -1,0 +1,22 @@
+@use './../utils' as *;
+
+/* book0-main-nav */
+.book-main-nav {
+  width: inherit;
+  order: 1;
+
+  ul{
+    width: inherit;
+    padding: $sm-spacing 0 $lg-spacing;
+    @include flex($justify:space-around, $align:center);
+  }
+
+  li {
+    font-size: 1.25rem;
+    color: $gray-100;
+  }
+
+  .is-selected {
+    color: $gray-700;
+  }
+}

@@ -1,0 +1,14 @@
+@use './../utils' as *;
+
+.flex-group {
+  height: 100vh;
+  @include flex($justify:center, $align:center, $gap:$xxl-spacing);
+
+  .book-main {
+    translate: 0 1rem;
+  }
+  
+  .book-info {
+    translate: 0 -1rem;
+  }
+}

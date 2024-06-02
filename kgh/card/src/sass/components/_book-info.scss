@@ -1,0 +1,41 @@
+@use './../utils' as *;
+
+.book-info {
+  height: 835px;
+  overflow: hidden;
+  @include flex(column, $align:center, $gap:$sm-spacing);
+
+  .rating {
+    margin-top: $sm-spacing;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: $gray-500;
+    padding: $xs-spacing $sm-spacing;
+    background-color: $gray-100;
+    border-radius: 0.25rem;
+  }
+
+  .book-explanation {
+    margin: $sm-spacing $xl-spacing;
+    color: $gray-500;
+    text-align: justify;
+    line-height: 1.15;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical
+  }
+
+  .close-button {
+    order: -1;
+    margin: $lg-spacing 0 $sm-spacing;
+    padding: $xs-spacing $sm-spacing;
+    translate: -210px;
+
+    span {
+      color: $gray-700;
+    }
+  }
+}
