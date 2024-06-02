@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 470px;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  color: gray;
+}
+header a {
+  font-size: 22px;
+  color: gray;
+}
+
+.search {
+  order: -1;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+.shelf-books {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.shelf-holder {
+  height: 15px;
+  box-shadow: 5px 5px 10px lightgrey;
+}
+
+.book {
+  margin: 40px 0 0 0;
+}
+
+img {
+  width: 110px;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 45px 0 0 0;
+}
+
+.icon {
+  font-size: 25px;
+  color: lightgray;
+}
+.icon:hover, .icon:focus {
+  color: gray;
+}
+
+/*# sourceMappingURL=book.css.map */
