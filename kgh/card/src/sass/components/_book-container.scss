@@ -1,0 +1,13 @@
+@use './../utils' as *;
+
+body {
+  background-color: rgb(250, 250, 255);
+}
+
+.book-container {
+  background-color: $white;
+  width: $container-width;
+  color: $gray-700;
+  box-shadow: 0 0 0.5rem 0.25rem rgba(12,12,12,0.05);
+  @include flex(column);
+}

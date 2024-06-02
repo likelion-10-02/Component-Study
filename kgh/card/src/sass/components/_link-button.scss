@@ -1,0 +1,21 @@
+@use './../utils' as *;
+
+.link-group {
+  margin: $base-spacing 0;
+  @include flex($justify:center, $gap:$xl-spacing);
+  
+  a {
+    font-size: 1rem;
+    font-weight: 800;
+    color: $gray-700;
+    padding: $base-spacing $xxl-spacing;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.5rem 0.125rem rgba(12,12,12,0.05);
+    background-color: #fff;
+    transition: color 200ms;
+  }
+
+  a:hover {
+    color: $blue;
+  }
+}

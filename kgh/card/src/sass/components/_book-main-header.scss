@@ -1,0 +1,22 @@
+@use './../utils' as *;
+
+/* book0-main-header */
+.book-main-header {
+  width: inherit;
+  margin: 0;
+  padding: $lg-spacing $lg-spacing $sm-spacing;
+  @include flex($justify:space-between, $align:center);
+
+  h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  a {
+    padding: $xs-spacing $sm-spacing;
+  }
+
+  .search {
+    order: -1;
+  }
+}
